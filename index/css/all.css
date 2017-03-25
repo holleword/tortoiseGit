@@ -1,0 +1,455 @@
+		/*引入网页所有图标*/
+		.graph {
+		  display: inline-block;
+		  vertical-align: middle;
+		  background-image: url(../img/20170323165844.png);
+		  background-repeat: no-repeat;
+		}
+		
+		/*设置图标16*16大小*/
+		.h16 {
+		  width: 16px;
+		  height: 16px;
+		}
+		
+		/*设置图标32*32大小*/
+		.h32 {
+		  width: 32px;
+		  height: 32px;
+		}
+		
+		/*设置图标63*16大小*/
+		.h63-16 {
+		  width: 63px;
+		  height: 16px;
+		}
+		
+		/*获取小房子图标*/
+		.house { background-position: 0 0;}
+		
+		/*获取任务图标*/
+		.tesk { background-position: -32px 0;}
+		
+		/*获取审批图标*/
+		.approval { background-position: -96px 0;}
+		
+		/*获取加号图标*/
+		.add { background-position: 0 -32px;}
+		
+		/*获取企鹅图标*/
+		.penguin { background-position: -128px -32px;}
+		
+		/*获取eteams公司图标*/
+		.eteams { background-position: -49px -32px;}
+		
+		/*获取个人设置之前的图标*/
+		.setting { background-position: -240px -0;}
+		
+		/*获取第二级导航栏的小盒子图标*/
+		.box { background-position: -290px -193px;}
+		
+		/*网页上层最大父div*/
+		.top {
+		  position: absolute;
+		  left: 0;
+		  top: 0;
+		  width: 100%;
+		  height: 50px;
+		  background-color: #2cc3e9;
+		  border-bottom: 2px solid #2cc3e9;
+		}
+		
+		/*用户头像信息DIV 其中包含了头像，名字，向下大于号 三个部分*/
+		.top-image {
+		  position: absolute;
+		  left: .8%;
+		}
+		
+		/*用户名称的字体样式设置*/
+		.username {
+		  position: absolute;
+		  top: 15px;
+		  left: 120%;
+		  font-family: "微软雅黑";
+		  font-size: 14px;
+		  font-weight: bolder;
+		  color: white;
+		}
+		
+		/*向下大于号的图片*/
+		.top-image-arrow {
+		  position: absolute;
+		  top: 0;
+		  left: 230%;
+		}
+		
+		/*房子图标DIV设置*/
+		.top-image-house {
+		  position: absolute;
+		  top: 0;
+		  left: 12%;
+		  height: 50px;
+		}
+		
+		/*任务DIV 其中包括了任务图标，任务字体两部分 */
+		.top-image-task {
+		  position: absolute;
+		  top: 0;
+		  left: 15%;
+		}
+		
+		/*任务字体的设置*/
+		.task {
+		  position: relative;
+		  top: 2px;
+		  left: -20%;
+		  font-family: "微软雅黑";
+		  font-size: 16px;
+		  font-weight: bolder;
+		  color: white;
+		}
+		
+		/*审批DIV 其中包括了审批图标，审批字体两部分 */
+		.top-image-approval {
+		  position: absolute;
+		  top: 0;
+		  left: 23%;
+		  height: 50px;
+		}
+		
+		/*审批字体的设置*/
+		.approval-font {
+		  position: relative;
+		  top: 2px;
+		  left: -20%;
+		  font-family: "微软雅黑";
+		  font-size: 16px;
+		  font-weight: bolder;
+		  color: white;
+		}
+		
+		/*更多应用DIV 其中包括了更多应用字体，向下大于号的图标*/
+		.top-image-more {
+		  position: absolute;
+		  top: 2px;
+		  left: 31.5%;
+		  width: 5%;
+		  height: 50px;
+		}
+		
+		/*更多应用字体的设置*/
+		.more {
+		  position: relative;
+		  top: 14px;
+		  left: 10%;
+		  font-family: "微软雅黑";
+		  font-size: 16px;
+		  font-weight: bolder;
+		  color: white;
+		}
+		
+		/*更多应用的向下大于号*/
+		.top-more-img {
+		  position: absolute;
+		  top: 0;
+		  left: 80%;
+		}
+		
+		/*加号的DIV设置*/
+		.top-image-add {
+		  position: absolute;
+		  top: 0;
+		  left: 72.03%;
+		  height: 50px;
+		}
+		
+		/*全局搜索的DIV 其中包括了搜索文本框，搜索图标图片*/
+		.top-search {
+		  position: absolute;
+		  top: 9px;
+		  left: 75.4%;
+		}
+		
+		/*搜索文本框的设置*/
+		.allsearch {
+		  height: 30px;
+		  width: 100%;
+		  color: #c9c9c9;
+		  border-radius: 20px;
+		  border: 0px;
+		  background-color: #1aafd4;
+		}
+		
+		/*搜索图片的设置*/
+		.searchimage {
+		  position: absolute;
+		  top: 5px;
+		  left: 80%;
+		}
+		
+		/*企鹅图标DIV的设置*/
+		.top-penguin {
+		  position: absolute;
+		  top: -1px;
+		  left: 88.38%;
+		}
+		
+		/*eteams商标的DIV设置*/
+		.top-eteams {
+		  position: absolute;
+		  top: -1px;
+		  left: 92.41%;
+		  height: 50px;
+		}
+		
+		/*eteams商标的设置*/
+		.eteams-image {
+		  position: relative;
+		  left: -14%;
+		}
+		
+		/*网页下半部分左半部分DIV 导航栏整体设置*/
+		.buttom-left {
+		  position: absolute;
+		  left: 0;
+		  top: 52px;
+		  width: 12.3%;
+		  height: 1000px;
+		  min-width: 192px;
+		  background-color: #263240;
+		}
+		
+		/*网页下半部分右半部分DIV的设置*/
+		.buttom-right {
+		  position: absolute;
+		  left: 12.3%;
+		  top: 52px;
+		  width: 87.7%;
+		  height: 1000px;
+		}
+		
+		/*下右部分上方导航栏DIV的设置*/
+		.buttom-right-top {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 55px;
+		  background-color: #f3f3f3;
+		  border-bottom: 1px solid #999;
+		}
+		
+		/*下右部分 数据展示DIV的设置*/
+		.buttom-right-buttom {
+		  position: absolute;
+		  top: 56px;
+		  left: 0;
+		  width: 100%;
+		  height: 944px;
+		  background-color: #d8d8d8;
+		}
+		
+		/*小盒子图标的设置*/
+		.image-box {
+		  position: absolute;
+		  top: 5px;
+		  left: 2.5%;
+		}
+		
+		/*个人设置字体设置*/
+		.personalsettingfont {
+		  position: absolute;
+		  top: 16px;
+		  left: 30%;
+		  font-family: "微软雅黑";
+		  color: #949494;
+		  font-size: 16px;
+		}
+		
+		/*网页左侧导航栏第一栏DIV的设置*/
+		.buttom-left-first {
+		  height: 55px;
+		  border-bottom: 1px solid #1a222c;
+		}
+		
+		/*网页左侧导航栏第二个开始所有DIV的样式设置*/
+		.buttom-left-second {
+		  height: 50px;
+		  border-bottom: 1px solid #1a222c;
+		  background-color: #1e2631;
+		}
+		
+		/*网页左侧导航栏中字体的设置*/
+		.buttom-left-secondfont {
+		  position: absolute;
+		  left: 30%;
+		  color: #aeaeae;
+		  font-family: "微软雅黑";
+		  font-size: 16px;
+		}
+		
+		/*网页中上部分导航栏的整体DIV设置*/
+		.right-top-nav {
+		  position: absolute;
+		  top: 0;
+		  left: 5%;
+		  width: 46.95%;
+		  height: 57px;
+		  border: 1px;
+		}
+		
+		/*网页友右下部分信息展示部分 左上表格DIV的设置*/
+		.show-message {
+		  float: left;
+		  width: 63.339%;
+		  height: 277px;
+		  background-color: white;
+		  border-radius: 5px;
+		  border: 1px solid #bcbcbc;
+		}
+		
+		/*网页右下部分信息展示部分 左下表格DIV的设置*/
+		.show-message-buttom {
+		  position: absolute;
+		  top: 325px;
+		  left: 24px;
+		  width: 57.675%;
+		  height: 460px;
+		  background-color: white;
+		  border-radius: 5px;
+		  border: 1px solid #bcbcbc;
+		}
+		
+		/*网页右下部分信息展示部分 右上权限说明表格DIV的设置*/
+		.permission-message {
+		  float: right;
+		  width: 34.357%;
+		  height: 177px;
+		  border-radius: 5px;
+		  border: 1px solid #bcbcbc;
+		}
+		
+		/*网页左侧导航栏的大DIV*/
+		.buttom-left-top {
+		  position: absolute;
+		  top: 24px;
+		  left: 24px;
+		  width: 90.924%;
+		  height: 277px;
+		}
+		
+		/*网页左侧导航栏个人设置DIV块*/
+		.nav-left {
+		  width: 100%;
+		  height: 45.16px;
+		  border-bottom: 1px solid #bcbcbc;
+		}
+		
+		/*网页左侧导航栏每一栏的DIV设置*/
+		.nav-left-font {
+		  position: absolute;
+		  left: 3%;
+		  font-family: "微软雅黑";
+		  font-size: 16px;
+		  color: #868686;
+		}
+		
+		/*网页右侧所有表格中的字体的设置*/
+		.right-table-font {
+		  position: absolute;
+		  left: 4.64%;
+		  font-family: "微软雅黑";
+		  font-size: 16px;
+		  color: #868686;
+		}
+		
+		/*退出团队按钮设置*/
+		.button-quitteam {
+		  position: absolute;
+		  top: 802px;
+		  width: 4.2%;
+		  height: 28px;
+		  font-family: "微软雅黑";
+		  color: white;
+		  background-color: #23b7e5;
+		  border: 0;
+		  border-radius: 5px;
+		}
+		
+		/*修改密码按钮设置*/
+		.button-updatepw {
+		  position: absolute;
+		  top: 191px;
+		  left: 7.1%;
+		  height: 35px;
+		  width: 6.5%;
+		  font-family: "微软雅黑";
+		  color: white;
+		  background-color: #23b7e5;
+		  border: 0;
+		  border-radius: 5px;
+		}
+		
+		/*左侧导航栏竖线设置*/
+		.itemline {
+		  position: absolute;
+		  left: 37px;
+		  height: 50px;
+		  border-left: 2px solid #393e44;
+		}
+		
+		/*左侧导航栏图案中大圆的设置*/
+		.itemcircle {
+		  position: absolute;
+		  left: 32.3px;
+		  height: 11px;
+		  width: 11px;
+		  border-radius: 50%;
+		  background-color: #393e44;
+		}
+		
+		/*左侧导航栏图案中大圆中小圆的设置*/
+		.itemcircle-o {
+		  position: absolute;
+		  left: 34.15px;
+		  height: 7px;
+		  width: 7px;
+		  border-radius: 50%;
+		  background-color: #1e2631;
+		}
+		
+		/*上部分图标鼠标悬停变化*/
+		.top-image-task:hover,
+		.top-image:hover { background-color: #08b1db;}
+		
+		/*上部分图标鼠标悬停变化*/
+		.top-image-approval:hover,
+		.top-image-house:hover,
+		.top-image-more:hover { background-color: #08b1db;}
+		
+		/*上部分图标鼠标悬停变化*/
+		.top-image-add:hover,
+		.top-penguin:hover,
+		.top-eteams:hover { background-color: #08b1db;}
+		
+		/*左侧导航栏鼠标悬停背景颜色的变化*/
+		.buttom-left-second:hover { background-color: black;}
+		
+		/*网页第二级导航栏的所有DIV设置*/
+		.nav-second-div {
+		  position: absolute;
+		  top: 0;
+		  width: 11%;
+		  height: 57px;
+		}
+		
+		/*网页第二级导航栏的所有字体设置*/
+		.nav-second-font {
+		  position: absolute;
+		  top: 18px;
+		  color: #949494;
+		}
+		
+		/*网页第二级导航栏鼠标悬停字体颜色的变化*/
+		.nav-second-font:hover { color: red;}
+		

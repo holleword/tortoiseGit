@@ -1,590 +1,203 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-cmn-Hans">
 
   <head>
     <meta charset="utf-8" />
     <title>首页</title>
   </head>
-  <style type="text/css">
-    .graph {
-      background-image: url(img/20170323165844.png);
-      background-repeat: no-repeat;
-      display: inline-block;
-      vertical-align: middle
-    }
-    
-    .h16 {
-      height: 16px;
-      width: 16px;
-    }
-    
-    .h32 {
-      width: 32px;
-      height: 32px;
-    }
-    
-    .h63-16 {
-      width: 63px;
-      height: 16px;
-    }
-    
-    .house {
-      background-position: 0 0;
-    }
-    
-    .tesk {
-      background-position: -32px 0;
-    }
-    
-    .approval {
-      background-position: -96px 0;
-    }
-    
-    .add {
-      background-position: 0 -32px;
-    }
-    
-    .penguin {
-      background-position: -128px -32px;
-    }
-    
-    .eteams {
-      background-position: -49px -32px;
-    }
-    
-    .shezhi {
-      background-position: -240px -0;
-    }
-    
-    .box {
-      background-position: -290px -193px;
-    }
-    
-    .top {
-      position: absolute;
-      left: 0;
-      top: 0;
-      background-color: #2CC3E9;
-      width: 100%;
-      height: 50px;
-      border-bottom: 2px solid #2CC3E9;
-    }
-    
-    .top-image {
-      position: absolute;
-      left: .8%;
-    }
-    
-    .username {
-      font-family: "微软雅黑";
-      font-size: 14px;
-      font-weight: bolder;
-      color: white;
-      position: absolute;
-      top: 15px;
-      left: 120%;
-    }
-    
-    .top-image-arrow {
-      position: absolute;
-      top: 0;
-      left: 230%;
-    }
-    
-    .top-image-house {
-      position: absolute;
-      top: 0;
-      left: 12%;
-      height: 50px;
-    }
-    
-    .top-image-task {
-      position: absolute;
-      top: 0;
-      left: 15%;
-    }
-    
-    .task {
-      font-size: 16px;
-      font-weight: bolder;
-      color: white;
-      font-family: "微软雅黑";
-      position: relative;
-      top: 2px;
-      left: -20%;
-    }
-    
-    .top-image-approval {
-      position: absolute;
-      top: 0;
-      left: 23%;
-      height: 50px;
-    }
-    
-    .approvalFont {
-      font-size: 16px;
-      font-weight: bolder;
-      color: white;
-      font-family: "微软雅黑";
-      position: relative;
-      top: 2px;
-      left: -20%;
-    }
-    
-    .top-image-more {
-      position: absolute;
-      top: 2px;
-      left: 32.5%;
-      height: 50px;
-    }
-    
-    .more {
-      font-size: 16px;
-      font-weight: bolder;
-      color: white;
-      font-family: "微软雅黑";
-      position: relative;
-      top: 14px;
-      left: -15%;
-    }
-    
-    .top-image-more-img {
-      position: absolute;
-      top: 0;
-      left: 90%;
-    }
-    
-    .top-image-add {
-      position: absolute;
-      top: 0;
-      left: 72.03%;
-      height: 50px;
-    }
-    
-    .top-search {
-      position: absolute;
-      top: 9px;
-      left: 75.4%;
-    }
-    
-    .allSearch {
-      height: 30px;
-      width: 100%;
-      border-radius: 20px;
-      border: 0px;
-      background-color: #1AAFD4;
-      color: #C9C9C9;
-    }
-    
-    .searchImage {
-      position: absolute;
-      top: 5px;
-      left: 80%;
-    }
-    
-    .top-penguin {
-      position: absolute;
-      top: -1px;
-      left: 88.38%;
-    }
-    
-    .top-eteams {
-      position: absolute;
-      top: -1px;
-      left: 92.41%;
-      height: 50px;
-    }
-    
-    .eteamsfont {
-      font-size: 14px;
-      font-weight: bolder;
-      color: white;
-      font-family: "微软雅黑";
-      position: relative;
-      top: -14px;
-      left: -15%;
-    }
-    
-    .eteams-image {
-      position: relative;
-      left: -14%;
-    }
-    
-    .buttom-left {
-      position: absolute;
-      left: 0;
-      top: 52px;
-      width: 12.3%;
-      height: 1000px;
-      background-color: #263240;
-    }
-    
-    .buttom-right {
-      position: absolute;
-      left: 12.3%;
-      top: 52px;
-      width: 87.7%;
-      height: 1000px;
-    }
-    
-    .buttom-right-top {
-      position: absolute;
-      width: 100%;
-      height: 55px;
-      top: 0;
-      left: 0;
-      background-color: #F3F3F3;
-      border-bottom: 1px solid #999999;
-    }
-    
-    .buttom-right-buttom {
-      position: absolute;
-      width: 100%;
-      height: 944px;
-      top: 56px;
-      left: 0;
-      background-color: #D8D8D8;
-    }
-    
-    .image-box {
-      position: absolute;
-      top: 5px;
-      left: 2.5%;
-    }
-    
-    .buttom-right-top-table {
-      position: absolute;
-      top: 0;
-      left: 6.19%;
-      width: 46%;
-      height: 50px;
-    }
-    
-    .buttom-right-top-table-font {
-      font-family: "微软雅黑";
-      color: #949494;
-      font-size: 14px;
-    }
-    
-    .table-image {
-      position: absolute;
-      top: 1px;
-      height: 46px;
-    }
-    
-    .buttom-left-table {
-      position: absolute;
-      top: 0;
-      height: 346px;
-      width: 101%;
-    }
-    
-    .personalSettingFont {
-      font-family: "微软雅黑";
-      color: #949494;
-      font-size: 16px;
-      position: absolute;
-      top: 16px;
-      left: 30%;
-    }
-    
-    .buttom-left-first {
-      height: 55px;
-      border-bottom: 1px solid #1A222C;
-    }
-    
-    .buttom-left-second {
-      height: 50px;
-      border-bottom: 1px solid #1A222C;
-      background-color: #1E2631;
-    }
-    
-    .buttom-left-secondFont {
-      color: #AEAEAE;
-      font-family: "微软雅黑";
-      font-size: 16px;
-      position: absolute;
-      left: 30%;
-    }
-    
-    .buttom-right-top-table {
-      border: 1px;
-      width: 46.95%;
-      height: 57px;
-    }
-    
-    .table-font {
-      font-family: "微软雅黑";
-      font-size: 16px;
-      color: #949494;
-    }
-    
-    .buttom-right-buttom-first {
-      width: 63.339%;
-      height: 277px;
-      background-color: white;
-      border-radius: 5px;
-      float: left;
-      border: 1px solid #BCBCBC;
-    }
-    
-    .buttom-right-buttom-second {
-      width: 57.675%;
-      height: 460px;
-      background-color: white;
-      border-radius: 5px;
-      position: absolute;
-      top: 325px;
-      left: 24px;
-      border: 1px solid #BCBCBC;
-    }
-    
-    .buttom-right-buttom-third {
-      width: 34.357%;
-      height: 177px;
-      border-radius: 5px;
-      float: right;
-      border: 1px solid #BCBCBC;
-    }
-    
-    .buttom-left-top {
-      width: 90.924%;
-      height: 277px;
-      position: absolute;
-      top: 24px;
-      left: 24px;
-    }
-    
-    .buttom-right-buttom-first-div {
-      width: 100%;
-      height: 45.16px;
-      border-bottom: 1px solid #BCBCBC;
-    }
-    
-    .buttom-right-buttom-first-div-font {
-      font-family: "微软雅黑";
-      font-size: 16px;
-      color: #868686;
-      position: absolute;
-      left: 3%;
-    }
-    
-    .buttom-right-buttom-second-div-font {
-      font-family: "微软雅黑";
-      font-size: 16px;
-      color: #868686;
-      position: absolute;
-      left: 4.64%;
-    }
-    
-    .button-quitTeam {
-      font-family: "微软雅黑";
-      color: white;
-      background-color: #23B7E5;
-      position: absolute;
-      top: 802px;
-      border: 0;
-      border-radius: 5px;
-      width: 4.2%;
-      height: 28px;
-    }
-    
-    .button-updatePw {
-      font-family: "微软雅黑";
-      color: white;
-      background-color: #23B7E5;
-      position: absolute;
-      top: 191px;
-      left: 7.1%;
-      border: 0;
-      border-radius: 5px;
-      height: 35px;
-      width: 6.5%;
-    }
-    
-    .itemline {
-      position: absolute;
-      left: 37px;
-      border-left: 2px solid #393E44;
-      height: 50px;
-    }
-    
-    .itemcircle {
-      position: absolute;
-      left: 32.3px;
-      border-radius: 50%;
-      height: 11px;
-      width: 11px;
-      background-color: #393E44;
-    }
-    
-    .itemcircle-o {
-      position: absolute;
-      left: 34.15px;
-      border-radius: 50%;
-      height: 7px;
-      width: 7px;
-      background-color: #1E2631;
-    }
-    
-    .buttom-left-second:hover {background-color: #1B222C;}
-    
-    .top-image-task:hover,.top-image:hover {background-color: #08B1DB;}
-    
-    .top-image-approval:hover,.top-image-house:hover {background-color: #08B1DB;}
-    
-    .top-image-add:hover,.top-penguin:hover,.top-eteams:hover {background-color: #08B1DB; }
-  </style>
-
+  
+  <!--引入所有样式 -->
+  <link rel="stylesheet" href="css/all.css" />
+  
   <body>
+  	<!--网页上半部分-->
     <div class="top">
+    	
+      <!--个人头像 -->
       <div class="top-image">
-        <img src="img/2017-03-23_121655.png" >
+        <img src="img/2017-03-23_121655.png">
         <font class="username">yangk</font>
-        <img class="top-image-arrow" src="img/2017-03-23_123321.png" >
-      </div>
+        <img class="top-image-arrow" src="img/2017-03-23_123321.png">
+      </div> 
+      
+      <!--房子部分 -->
       <div class="top-image-house">
         <i class="graph house h16" style="margin: 19px;"></i>
       </div>
+      
+      <!--任务部分 -->
       <div class="top-image-task">
         <i class="graph tesk h16" style="margin: 19px;"></i>
         <font class="task">任务</font>
       </div>
+      
+      <!--审批部分 -->
       <div class="top-image-approval">
         <i class="graph approval h16" style="margin:19px;"></i>
-        <font class="approvalFont">审批</font>
+        <font class="approval-font">审批</font>
       </div>
+      
+      <!--更多应用部分 -->
       <div class="top-image-more">
         <font class="more">更多应用</font>
-        <img class="top-image-more-img" src="img/2017-03-23_141204.png" >
+        <img class="top-more-img" src="img/2017-03-23_141204.png">
       </div>
+      
+      <!--加号图标部分 -->
       <div class="top-image-add">
         <i class="graph add h16" style="margin: 19px;"></i>
       </div>
+      
+      <!--全局搜索部分 -->
       <div class="top-search">
-        <input class="allSearch" type="text" value="   全局搜索" />
-        <img class="searchImage" src="img/2017-03-23_144542.png" >
+        <input class="allsearch" type="text" value="   全局搜索" />
+        <img class="searchimage" src="img/2017-03-23_144542.png">
       </div>
+      
+      <!--企鹅图标 -->
       <div class="top-penguin">
         <i class="graph penguin h16" style="margin: 19px;"></i>
       </div>
+      
+      <!--eteams图标 -->
       <div class="top-eteams">
-        <i class="graph eteams h63-16" style="margin: 19px;float:left;"></i>
-        <img class="eteams-image" src="img/2017-03-23_150112.png" >
+        <i class="graph eteams h63-16" style="float: left;margin: 19px;"></i>
+        <img class="eteams-image" src="img/2017-03-23_150112.png">
       </div>
     </div>
+    
+    <!--网页下半部分-->
     <div class="buttom">
+    	
+      <!--网页下半部分左侧 -->	
       <div class="buttom-left">
+      	
+      	<!--左侧导航栏个人设置部分 -->
         <div class="buttom-left-first">
-          <i class="graph shezhi h16" style="margin-top:19px;margin-left: 13%;"></i>
-          <font class="personalSettingFont">个人设置</font>
+          <i class="graph setting h16" style="margin-top: 19px;margin-left: 13%;"></i>
+          <font class="personalsettingfont">个人设置</font>
         </div>
+        <!--左侧导航栏可点击部分-->
         <div class="buttom-left-second">
-          <div class="itemline" style="top:56px;"></div>
-          <div class="itemcircle" style="top:76px;"></div>
+          <div class="itemline" style="top: 56px;"></div>
+          <div class="itemcircle" style="top: 76px;"></div>
           <div class="itemcircle-o" style="top: 78px;"></div>
-          <font class="buttom-left-secondFont" style="top:72px;">个人资料</font>
+          <font class="buttom-left-secondfont" style="top: 72px;">个人资料</font>
         </div>
         <div class="buttom-left-second">
-          <div class="itemline" style="top:107px;"></div>
-          <div class="itemcircle" style="top:127px;"></div>
+          <div class="itemline" style="top: 107px;"></div>
+          <div class="itemcircle" style="top: 127px;"></div>
           <div class="itemcircle-o" style="top: 129px;"></div>
-          <font class="buttom-left-secondFont" style="top:123px;">头像设置</font>
+          <font class="buttom-left-secondfont" style="top: 123px;">头像设置</font>
         </div>
         <div class="buttom-left-second">
-          <div class="itemline" style="top:158px;"></div>
-          <div class="itemcircle" style="top:178px;"></div>
+          <div class="itemline" style="top: 158px;"></div>
+          <div class="itemcircle" style="top: 178px;"></div>
           <div class="itemcircle-o" style="top: 180px;"></div>
-          <font class="buttom-left-secondFont" style="top:174px;">修改密码</font>
+          <font class="buttom-left-secondfont" style="top: 174px;">修改密码</font>
         </div>
         <div class="buttom-left-second">
-          <div class="itemline" style="top:209px;"></div>
-          <div class="itemcircle" style="top:229px;"></div>
+          <div class="itemline" style="top: 209px;"></div>
+          <div class="itemcircle" style="top: 229px;"></div>
           <div class="itemcircle-o" style="top: 231px;"></div>
-          <font class="buttom-left-secondFont" style="top:225px;">消息设置</font>
+          <font class="buttom-left-secondfont" style="top: 225px;">消息设置</font>
         </div>
         <div class="buttom-left-second">
-          <div class="itemline" style="top:260px;"></div>
-          <div class="itemcircle" style="top:280px;"></div>
+          <div class="itemline" style="top: 260px;"></div>
+          <div class="itemcircle" style="top: 280px;"></div>
           <div class="itemcircle-o" style="top: 282px;"></div>
-          <font class="buttom-left-secondFont" style="top:276px;">应用设置</font>
+          <font class="buttom-left-secondfont" style="top: 276px;">应用设置</font>
         </div>
         <div class="buttom-left-second">
-          <div class="itemline" style="top:311px;"></div>
-          <div class="itemcircle" style="top:331px;"></div>
+          <div class="itemline" style="top: 311px;"></div>
+          <div class="itemcircle" style="top: 331px;"></div>
           <div class="itemcircle-o" style="top: 333px;"></div>
-          <font class="buttom-left-secondFont" style="top:327px;">首页设置</font>
+          <font class="buttom-left-secondfont" style="top: 327px;">首页设置</font>
         </div>
         <div class="buttom-left-second">
-          <div class="itemline" style="top:362px;"></div>
-          <div class="itemcircle" style="top:382px;"></div>
+          <div class="itemline" style="top: 362px;"></div>
+          <div class="itemcircle" style="top: 382px;"></div>
           <div class="itemcircle-o" style="top: 384px;"></div>
-          <font class="buttom-left-secondFont" style="top:378px;">申请加入团队列表</font>
+          <font class="buttom-left-secondfont" style="top: 378px;">申请加入团队列表</font>
         </div>
 
       </div>
+      
+      <!--网页下半部分右侧 -->
       <div class="buttom-right">
+      	
+      	<!--网页右侧上面导航栏 -->
         <div class="buttom-right-top">
-          <div style="height:55px;">
+        	
+          <!--小盒子图标 -->	
+          <div style="height: 55px;">
             <i class="graph box h32" style="position: absolute;left: 1.5% ;top:10px;display: inline;"></i>
           </div>
-          <table class="buttom-right-top-table">
-            <tr>
-              <td width="14.28%">
-                <font class="table-font">基本信息</font>
-              </td>
-              <td width="14.28%">
-                <font class="table-font">用户下属</font>
-              </td>
-              <td width="14.28%">
-                <font class="table-font">个人信息</font>
-              </td>
-              <td width="14.28%">
-                <font class="table-font">人事合同</font>
-              </td>
-              <td width="14.28%">
-                <font class="table-font">第三方信息</font>
-              </td>
-              <td width="14.28%">
-                <font class="table-font">&nbsp;&nbsp;邮箱设置</font>
-              </td>
-              <td width="14.28%">
-                <font class="table-font">&nbsp;更多</font>
-                <img src="img/2017-03-24_093831.png" style="position: absolute; top: 16px;" />
-              </td>
-            </tr>
-          </table>
+          
+          <!--网页右侧上面导航栏 可点击部分 -->
+          <div class="right-top-nav">
+            <div class="nav-second-div">
+              <font class="nav-second-font">基本信息</font>
+            </div>
+            <div class="nav-second-div" style="left: 13%;">
+              <font class="nav-second-font">用户下属</font>
+            </div>
+            <div class="nav-second-div" style="left: 26%;">
+              <font class="nav-second-font">个人信息</font>
+            </div>
+            <div class="nav-second-div" style="left: 39%;">
+              <font class="nav-second-font">人事合同</font>
+            </div>
+            <div class="nav-second-div" style="left: 52%;">
+              <font class="nav-second-font">第三方账号</font>
+            </div>
+            <div class="nav-second-div" style="left: 66.5%;">
+              <font class="nav-second-font">邮箱设置</font>
+            </div>
+            <div class="nav-second-div" style="left: 79.5%;">
+              <font class="nav-second-font">更多</font>
+              <img src="img/2017-03-24_093831.png" style="position: absolute;top: 12px;left: 41%;">
+            </div>  
+          </div>
 
         </div>
+        
+        <!--网页右侧数据展示部分 -->
         <div class="buttom-right-buttom">
+        	
+          <!--数据展示部分上部分 -->	
           <div class="buttom-left-top">
-            <div class="buttom-right-buttom-first">
-              <div class="buttom-right-buttom-first-div">
-                <font class="buttom-right-buttom-first-div-font" style="top: 13px;">姓名：</font>
+          	
+          	<!--数据展示部分上部分 -->
+            <div class="show-message">
+              
+              <!--数据展示部分上部分左侧表格 -->
+              <div class="nav-left">
+                <font class="nav-left-font" style="top: 13px;">姓名：</font>
               </div>
-              <div class="buttom-right-buttom-first-div">
-                <font class="buttom-right-buttom-first-div-font" style="top: 58.16px;">账号：</font>
+              <div class="nav-left">
+                <font class="nav-left-font" style="top: 58.16px;">账号：</font>
               </div>
-              <div class="buttom-right-buttom-first-div">
-                <font class="buttom-right-buttom-first-div-font" style="top: 104.16px;">邮箱：</font>
-                <a href="#" style="color: #169BD5;text-decoration: none;position: absolute;top: 103.16px;left: 20%">
+              <div class="nav-left">
+                <font class="nav-left-font" style="top: 104.16px;">邮箱：</font>
+                <a href="#" style="position: absolute;top: 103.16px;left: 20%;color: #169BD5;text-decoration: none;">
                   <font style="font-family: '微软雅黑';">[更换绑定]</font>
                 </a>
               </div>
-              <div class="buttom-right-buttom-first-div">
-                <font class="buttom-right-buttom-first-div-font" style="top: 150.48px;">手机：</font>
-                <a href="#" style="color: #169BD5;text-decoration: none;position: absolute;top: 149.48px;left: 20%">
+              <div class="nav-left">
+                <font class="nav-left-font" style="top: 150.48px;">手机：</font>
+                <a href="#" style="position: absolute;top: 149.48px;left: 20%;color: #169BD5;text-decoration: none;">
                   <font style="font-family: '微软雅黑';">[绑定]</font>
                 </a>
               </div>
-              <div class="buttom-right-buttom-first-div">
-                <font class="buttom-right-buttom-first-div-font" style="top: 197.64px;">密码：</font>
-                <button class="button-updatePw">
-									<img src="img/2017-03-24_133227.png">修改密码
+              <div class="nav-left">
+                <font class="nav-left-font" style="top: 197.64px;">密码：</font>
+                <button class="button-updatepw">
+				  <img src="img/2017-03-24_133227.png">修改密码
 				</button>
               </div>
               <div>
-                <font class="buttom-right-buttom-first-div-font" style="top: 244.8px;">性别：</font>
+                <font class="nav-left-font" style="top: 244.8px;">性别：</font>
                 <div style="position: absolute;top: 244.8px;left: 7%;">
                   <input type="radio" name="gender">
                   <font style="font-family: '微软雅黑';color: #868686;">男</font>
@@ -594,52 +207,58 @@
                 </div>
               </div>
             </div>
-
-            <div class="buttom-right-buttom-third">
-              <div class="buttom-right-buttom-first-div">
-                <font style="font-family: '微软雅黑';color: #868686;position: absolute;top: 13px;left: 68%;">其他权限说明</font>
+            
+            <!--数据展示部分上部分右侧表格权限说明 -->
+            <div class="permission-message">
+              <div class="nav-left">
+                <font style="position: absolute;top: 13px;left: 68%;font-family: '微软雅黑';color: #868686;">其他权限说明</font>
               </div>
               <div>
-                <font style="font-family: '微软雅黑';font-size: 14px;color: #868686;position: absolute;top: 65px;left: 68%;">1.助理：代表可以查看本人下属的工作内容</font>
-                <font style="font-family: '微软雅黑';font-size: 14px;color: #868686;position: absolute;top: 102px;left: 68%;">2.权限开放：代表可以把自己的所有工作内容开放给其他同事查阅</font>
-                <font style="font-family: '微软雅黑';font-size: 14px;color: #868686;position: absolute;top: 136px;left: 68%;">3.其他上级：同上级</font>
+                <font style="position: absolute;top: 65px;left: 68%;font-family: '微软雅黑';font-size: 14px;color: #868686;">1.助理：代表可以查看本人下属的工作内容</font>
+                <font style="position: absolute;top: 102px;left: 68%;font-family: '微软雅黑';font-size: 14px;color: #868686;">2.权限开放：代表可以把自己的所有工作内容开放给其他同事查阅</font>
+                <font style="position: absolute;top: 136px;left: 68%;font-family: '微软雅黑';font-size: 14px;color: #868686;">3.其他上级：同上级</font>
               </div>
             </div>
           </div>
-          <div class="buttom-right-buttom-second">
-            <div class="buttom-right-buttom-first-div">
-              <font class="buttom-right-buttom-second-div-font" style="top: 12px;">电话：</font>
+          
+          <!--数据展示部分下部分 -->
+          <div class="show-message-buttom">
+            <div class="nav-left">
+              <font class="right-table-font" style="top: 12px;">电话：</font>
             </div>
-            <div class="buttom-right-buttom-first-div">
-              <font class="buttom-right-buttom-second-div-font" style="top: 57px;">工号：</font>
+            <div class="nav-left">
+              <font class="right-table-font" style="top: 57px;">工号：</font>
             </div>
-            <div class="buttom-right-buttom-first-div">
-              <font class="buttom-right-buttom-second-div-font" style="top: 103px;">部门：</font>
+            <div class="nav-left">
+              <font class="right-table-font" style="top: 103px;">部门：</font>
             </div>
-            <div class="buttom-right-buttom-first-div">
-              <font class="buttom-right-buttom-second-div-font" style="top: 149px;">岗位：</font>
+            <div class="nav-left">
+              <font class="right-table-font" style="top: 149px;">岗位：</font>
             </div>
-            <div class="buttom-right-buttom-first-div">
-              <font class="buttom-right-buttom-second-div-font" style="top: 195px;">职级：</font>
+            <div class="nav-left">
+              <font class="right-table-font" style="top: 195px;">职级：</font>
             </div>
-            <div class="buttom-right-buttom-first-div">
-              <font class="buttom-right-buttom-second-div-font" style="top: 241px;">上级：</font>
+            <div class="nav-left">
+              <font class="right-table-font" style="top: 241px;">上级：</font>
             </div>
-            <div class="buttom-right-buttom-first-div">
-              <font class="buttom-right-buttom-second-div-font" style="top: 287px;">助理：</font>
+            <div class="nav-left">
+              <font class="right-table-font" style="top: 287px;">助理：</font>
             </div>
-            <div class="buttom-right-buttom-first-div">
-              <font class="buttom-right-buttom-second-div-font" style="top: 333px;">权限开放：</font>
+            <div class="nav-left">
+              <font class="right-table-font" style="top: 333px;">权限开放：</font>
             </div>
-            <div class="buttom-right-buttom-first-div">
-              <font class="buttom-right-buttom-second-div-font" style="top: 379px;">入职时间：</font>
+            <div class="nav-left">
+              <font class="right-table-font" style="top: 379px;">入职时间：</font>
             </div>
             <div>
-              <font class="buttom-right-buttom-second-div-font" style="top: 425px;">状态：</font>
+              <font class="right-table-font" style="top: 425px;">状态：</font>
             </div>
           </div>
-          <button class="button-quitTeam" style="left: 50.05%">退出团队</button>
-          <button class="button-quitTeam" style="left: 55.05%">工作交接</button>
+          
+          <!--数据展示部分下部分两个按钮 -->
+          <button class="button-quitteam" style="left: 50.05%">退出团队</button>
+          <button class="button-quitteam" style="left: 55.05%">工作交接</button>
+          
         </div>
       </div>
     </div>
